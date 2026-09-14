@@ -40,6 +40,7 @@ jobs:
         run: terraform -chdir=terraform apply -auto-approve
         env:
           TF_VAR_lambda_role_arn: ${{ secrets.LAMBDA_ROLE_ARN }}
+          TF_VAR_aws_region: ${{ env.AWS_REGION }}
 
       - name: Print API endpoint
         run: terraform -chdir=terraform output api_endpoint
