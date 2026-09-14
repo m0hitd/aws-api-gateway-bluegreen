@@ -38,6 +38,8 @@ jobs:
 
       - name: Terraform Apply
         run: terraform -chdir=terraform apply -auto-approve
+        env:
+          TF_VAR_lambda_role_arn: ${{ secrets.LAMBDA_ROLE_ARN }}
 
       - name: Print API endpoint
         run: terraform -chdir=terraform output api_endpoint
