@@ -12,7 +12,8 @@ A production-grade, zero-downtime deployment pipeline using **blue/green strateg
 
 ## 📐 Architecture Overview
 
-![System Architecture](./System_Architecture_Overview.png)
+![System Architecture](./System%20Architecture%20Overview.png)
+
 
 The system implements a classic blue/green deployment model where:
 
